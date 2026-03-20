@@ -1,5 +1,19 @@
-#background{color:rgb(181, 49, 49);}
-#AboutS{color: rgb(255, 6, 6);}
-#email {color: rgb(167, 14, 106);}
-#github {color: rgb(167, 14, 106);}
-#head {color: rgb(167, 14, 106);}
+#background {
+    color: #0f0f23;  /* Almost black with blue tint */
+}
+
+#AboutS {
+    color: #1f1f3a;  /* Dark blue */
+}
+
+#email {
+    color: #4a148c;  /* Deep purple */
+}
+
+#github {
+    color: #4a148c;  /* Same deep purple */
+}
+
+#head {
+    color: #880e4f;  /* Deep magenta */
+}
