@@ -1,4 +1,4 @@
-
+#head { color: #1d1d55; }
 
 #AboutS {  color: #04045d; }
 
@@ -8,8 +8,10 @@
 
 #head {   color: #880e4f;  }
 
+#background { background-color: #4141d2;}
+
 #thanks {color: aliceblue;}
 
 #About {color: #f3f3f3;}
 
-
+#arrow { color: red; animation: rgbCycle 2s linear infinite; font-size: 2em; text-shadow: 0 0 5px currentColor;}@keyframes rgbCycle { 0% { filter: hue-rotate(0deg); } 100% { filter: hue-rotate(360deg); }}
