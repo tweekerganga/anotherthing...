@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <link rel="stylesheet" href="style.css">
     <title>my website</title>
@@ -7,37 +7,43 @@
     <meta name="author" content="Alex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body style="background-color: #9c71c9;">
-    <h1 id="head">THIS IS MY WEBSITE</h1>
+  <body id="background">
+  <h1 id="head">THIS IS MY WEBSITE</h1>
     <br>
     <hr>
     <br>
-    
     <div style="position: relative; display: inline-block;">
       <iframe style="border: 0;" src="https://tweekerganga.github.io/Sourkraut-Website/"></iframe>
       <a href="https://tweekerganga.github.io/Sourkraut-Website/" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></a>
     </div>
     <br>
-    
-    <div style="position: relative; display: inline-block;">
+     <div style="position: relative; display: inline-block;">
       <iframe style="border: 0;" src="https://tweekerganga.github.io/Hotwire-cutter/"></iframe>
       <a href="https://tweekerganga.github.io/Hotwire-cutter/" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></a>
     </div>
     <br>
+      <div style="position: relative; display: inline-block;">
+      <iframe style="border: 0;" src="https://tweekerganga.github.io/Apple-Pie/"></iframe>
+      <a href="https://tweekerganga.github.io/Apple-Pie/" target="_blank" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></a>
+    </div>
+   
+    <br>
 
-    <h4>about alex:</h4>
-    <p id="About">
+   
+  <hr>
+    <br>
+      <h4>about alex:</h4> 
       hello i am alex and im a amateur html coder, <ins>just made this site and its pretty cool!</ins>
       i will be adding much more everyday to this site to become a HTML, CSS and maybe JS master coder!
       will be nice for finding a job in the future and maybe make this big old rock flying at 1.3 million km/h a better place...
-      hope you enjoy my site and feel free to send me suggestions at 
-      <a id="email" href="mailto:tweekerganga@gmail.com" target="_blank" title="this will make you email me">my email.</a>
+      hope you enjoy my site and feel free to send me suggestions at     <a id="email" href="mailto:tweekerganga@gmail.com" target="_blank" title="this will make you email me">
+      my email.
+    </a>
+       <p>
+      <a id="github" href="https://github.com/tweekerganga" target="_blank" title="this will show you my github">
+        this is my github!
+      </a>
     </p>
-    
-    <p>
-      <a id="github" href="https://github.com/tweekerganga" target="_blank" title="this will show you my github">this is my github!</a>
-    </p>
-
     <h3 id="AboutS">why did i make this site?</h3>
     <ul>
       <li id="reason1">to gain knowledge about html</li>
@@ -45,25 +51,35 @@
       <li id="reason3">to look cool</li>
     </ul>
 
-    <!-- SQUIRREL CLICKER START -->
-    <audio id="LOL" preload="auto">
-      <source src="https://files.catbox.moe/14ih3m.mp3" type="audio/mpeg">
-    </audio>
+  <a href="#" onclick="spinAndLaugh(); return false;">
+  <img id="squirrel" src="https://i.ibb.co/cSQgX90h/squirrel.png" alt="squirrel" border="0" style="transition: transform 0.5s ease;">
+</a>
+
+<audio id="laugh" preload="auto">
+  <source src="https://files.catbox.moe/14ih3m.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let rotation = 0;
+function spinAndLaugh() {
+  rotation += 360;
+  document.getElementById('squirrel').style.transform = 'rotate(' + rotation + 'deg)';
+  document.getElementById('laugh').currentTime = 0;
+  document.getElementById('laugh').play();
+}
+</script>
   
-    <a href="#" onclick="document.getElementById('LOL').play(); return false;">
-      <img src="https://i.ibb.co/cSQgX90h/squirrel.png" alt="squirrel" border="0" style="cursor: pointer;">
-    </a>
-    <!-- SQUIRREL CLICKER END -->
 
     <br><br>
   
     <a href="https://ibb.co/5Xsqy5Y4">
-      <img src="https://i.ibb.co/WNBSwcD5/catonthelaptop.jpg" style="border: 0; max-width: 100%; height: auto; display: block;" alt="a cat thoughtfully in front of a laptop" title="cat of thoughts">
+      <img src="https://i.ibb.co/WNBSwcD5/catonthelaptop.jpg" style="border: 0;" alt="a cat thoughtfully in front of a laptop" 
+      title="cat of thoughts">
     </a>
-    
     <br><br><br>
+      <br><br>
     <br><br>
-    <br><br>
-    <br><br>
+  <br><br>
+
   </body>
 </html>
