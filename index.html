@@ -5,145 +5,118 @@
     <meta name="keywords" content="HTML, cool, cooking, diy, awesome">
     <meta name="author" content="Alex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      .tab-content { display: none; padding: 10px; border: 1px solid #ccc; background: white; }
-.tab-content.active { display: block; }
-
-      body { 
-        background-color: #d9bfe5; 
-        color: #000000; 
-        font-family: "Times New Roman", Times, serif; 
-        margin: 10px;
-      }
-      
-      h1, h2, h3 { 
-        color: #800080; 
-        text-decoration: underline;
-      }
-
-      a { color: blue; }
-      a:visited { color: purple; }
-
-      iframe { border: 5px outset #ffffff; margin: 10px; cursor: pointer; }
-      
-      button { 
-        padding: 5px; 
-        cursor: pointer;
-        font-family: "Comic Sans MS", cursive, sans-serif; 
-      }
-
-      input, textarea { 
-        border: 2px inset #eeeeee;
-        padding: 2px;
-      }
-
-      details {
-        border: 2px dashed #000;
-        padding: 10px;
-        margin-top: 20px;
-        background: #ffffff;
-      }
-      
-      table {
-        border: 3px solid black;
-        width: auto; 
-        background: white;
-      }
-      
-      th, td {
-        border: 1px solid black;
-        padding: 5px;
-      }
-
-      /* This makes the iframe area feel clickable */
-      .web-link {
-        display: inline-block;
-        vertical-align: top;
-        text-decoration: none;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="website-body">
   
-  <canvas id="rainCanvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999;"></canvas>
+  <canvas id="rainCanvas"></canvas>
   
-  <center><h1>WELCOME TO MY WEBSITE!!!!</h1></center>
+<div class="scrolling-header">
+  <h1>WELCOME TO MY WEBSITE!!!!</h1>
+</div>
+  
+  <!-- 3D WOW Animation -->
+  <div class="wow-container">
+    <figure>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+    </figure>
+  </div>
+  
   <hr>
  
- <h2>HERE IS COOL STUFF TO SEE:</h2>
+  <h2>HERE IS COOL STUFF TO SEE:</h2>
 
-<script async src="https://ukradiolive.com/public/jsv260327161015/jquery.embed-popup-player.js"></script>
+  <script async src="https://ukradiolive.com/public/jsv260327161015/jquery.embed-popup-player.js"></script>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start;">
+  <!-- FLEX CONTAINER FOR COOL STUFF -->
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start;">
 
-  <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; white-space: normal;">
-    <a class="js-popupPlayer" href="https://ukradiolive.com/bbc-radio-1#server727" title="Start online radio!">
-      <img src="https://ukradiolive.com/public/img/launcher/logo_96.png" title="Start online radio!" alt="Start online radio!">
-    </a>
-  </div>
-
-  <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; white-space: normal;">
-    <a href="https://www.corpwatch.org/article/nestle-and-making-brazils-obesity-crisis" target="_blank" title="NOT COOL SHIT CHECK IT OUT!!">
-      <b>FUCK NESTLE</b>
-    </a>
-  </div>
-
-  <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; width: 150px; white-space: normal;">
-    <a href="https://stacks.stanford.edu/file/hp877by7094/thesisBower-fixed-augmented.pdf" target="_blank" title="COOL SHIT CHECK IT OUT!!">
-      <b>BOUNDARY LAYER DYNAMIC SOARING FOR AUTONOMOUS AIRCRAFT:</b>
-    </a>
-  </div>
-
-  <a href="https://tweekerganga.github.io/Sourkraut-Website/" target="_blank" class="web-link" title="SOUP EVERYONE LOVES SOUP RIGHT?????????" style="display: inline-block; border: 1px solid black; line-height: 0;">
-    <iframe src="https://tweekerganga.github.io/Sourkraut-Website/" width="200" height="150" style="pointer-events: none;"></iframe>
-  </a>
-
-  <a href="https://tweekerganga.github.io/Hotwire-cutter/" target="_blank" class="web-link" title="THIS CAN MAKE COOL FUCKING PLANES AND COOL SHIT GET SOME BITCHES WITH THE HUMBLE HOTWIRE FOAM CUTTER!!!!!" style="display: inline-block; border: 1px solid black; line-height: 0;">
-    <iframe src="https://tweekerganga.github.io/Hotwire-cutter/" width="200" height="150" style="pointer-events: none;"></iframe>
-  </a>
-
-  <a href="https://tweekerganga.github.io/Apple-Pie/" target="_blank" class="web-link" title="A TEXT THAT WILL MAKE YOU MAKE PIE, EVERYONE LOVES PIE EVEN YOUR NEIGHBOR LOVES APPLE PIE, MAKE SOME APPLE PIE FOR YOURSELF AND PEOPLE YOU KNOW IT IS SO CHEAP AND GOOD APPLE PIEEE!!!!!!!!!!!!!!" style="display: inline-block; border: 1px solid black; line-height: 0;">
-    <iframe src="https://tweekerganga.github.io/Apple-Pie/" width="200" height="150" style="pointer-events: none;"></iframe>
-  </a>
-
-</div>
-
-<style>
-@media (max-width: 768px) {
-  div[style*="display: flex"] {
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    padding-bottom: 10px !important;
-  }
-}
-</style>
- <button title="CATS FOR EVERYONE FROM EVERYONE!" onclick="document.getElementById('panel').classList.toggle('active')">Feline cat kitty Gallery!</button>
-
- <div id="panel" class="tab-content">
-        <a href="https://ibb.co/rR4T0Gy5">
-            <img src="https://i.ibb.co/Jw50tRkr/Screenshot-20260118-195706.png" alt="Screenshot" border="0">
-            <p>just a stock photo of a cat</p>
-        </a>
-        <a href="https://imgbb.com/">
-            <img src="https://i.ibb.co/TDKpP1GS/blive.jpg" alt="Screenshot" border="0">
-            <p>BELIVE!</p>
-        </a>
-        <a href="---">
-            <img src="---" alt="Screenshot" border="0">
-            <p>cat</p>
-        </a>
-         <a href="---">
-            <img src="---" alt="Screenshot" border="0">
-            <p>cat</p>
-        </a> <a href="---">
-            <img src="---" alt="Screenshot" border="0">
-            <p>cat</p>
-        </a> <a href="---">
-            <img src="---" alt="Screenshot" border="0">
-            <p>cat</p>
-        </a>
+    <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; white-space: normal;">
+      <a class="js-popupPlayer" href="https://ukradiolive.com/bbc-radio-1#server727" title="Start online radio!">
+        <img src="https://ukradiolive.com/public/img/launcher/logo_96.png" title="Start online radio!" alt="Start online radio!">
+      </a>
     </div>
 
+    <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; white-space: normal;">
+      <a href="https://www.corpwatch.org/article/nestle-and-making-brazils-obesity-crisis" target="_blank" title="NOT COOL SHIT CHECK IT OUT!!">
+        <b>FUCK NESTLE</b>
+      </a>
+    </div>
+
+    <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; width: 150px; white-space: normal;">
+      <a href="https://stacks.stanford.edu/file/hp877by7094/thesisBower-fixed-augmented.pdf" target="_blank" title="COOL SHIT CHECK IT OUT!!">
+        <b>BOUNDARY LAYER DYNAMIC SOARING FOR AUTONOMOUS AIRCRAFT:</b>
+      </a>
+    </div>
+
+    <a href="https://tweekerganga.github.io/Sourkraut-Website/" target="_blank" class="web-link" title="SOUP EVERYONE LOVES SOUP RIGHT?????????" style="display: inline-block; border: 1px solid black; line-height: 0;">
+      <iframe src="https://tweekerganga.github.io/Sourkraut-Website/" width="200" height="150" style="pointer-events: none;"></iframe>
+    </a>
+
+    <a href="https://tweekerganga.github.io/Hotwire-cutter/" target="_blank" class="web-link" title="THIS CAN MAKE COOL FUCKING PLANES AND COOL SHIT GET SOME BITCHES WITH THE HUMBLE HOTWIRE FOAM CUTTER!!!!!" style="display: inline-block; border: 1px solid black; line-height: 0;">
+      <iframe src="https://tweekerganga.github.io/Hotwire-cutter/" width="200" height="150" style="pointer-events: none;"></iframe>
+    </a>
+
+    <a href="https://tweekerganga.github.io/Apple-Pie/" target="_blank" class="web-link" title="A TEXT THAT WILL MAKE YOU MAKE PIE, EVERYONE LOVES PIE EVEN YOUR NEIGHBOR LOVES APPLE PIE, MAKE SOME APPLE PIE FOR YOURSELF AND PEOPLE YOU KNOW IT IS SO CHEAP AND GOOD APPLE PIEEE!!!!!!!!!!!!!!" style="display: inline-block; border: 1px solid black; line-height: 0;">
+      <iframe src="https://tweekerganga.github.io/Apple-Pie/" width="200" height="150" style="pointer-events: none;"></iframe>
+    </a>
+
+  </div>
+
+  <!-- CAT GALLERY BUTTON AND PANEL -->
+  <button title="CATS FOR EVERYONE FROM EVERYONE!" onclick="document.getElementById('panel').classList.toggle('active')">Feline cat kitty Gallery!</button>
+
+  <div id="panel" class="tab-content">
+    <a href="https://ibb.co/rR4T0Gy5">
+      <img src="https://i.ibb.co/Jw50tRkr/Screenshot-20260118-195706.png" alt="Screenshot" border="0">
+      <p>just a stock photo of a cat...</p>
+    </a>
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/TDKpP1GS/blive.jpg" alt="Screenshot" border="0">
+      <p>BELIVE!</p>
+    </a>
+    <a href="https://ibb.co/qMXRLVdB">
+      <img src="https://i.ibb.co/d01QsxrB/cica.jpg" alt="cica" border="0">
+      <p>Cica Mica Parádnica (Lilly).</p>
+    </a>
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/YFZ2fpGt/rockcat.jpg" alt="rockcat" border="0">
+      <p>cat be like.</p>
+    </a>
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/WvGfMrnR/theeeve.jpg" alt="theeeve" border="0">
+      <p>sleeping miss (Eeve).</p>
+    </a>
+    <a href="https://ibb.co/m5Fq2XQt">
+      <img src="https://i.ibb.co/CKs7YMxv/catloaf.jpg" alt="catloaf" border="0">
+      <p>cat from above (Lilly).</p>
+    </a>
+    <a href="https://ibb.co/JR2ZFRPJ">
+      <img src="https://i.ibb.co/TBRyqB53/tacicuska.png" alt="tacicuska" border="0">
+      <p>cat (Lilly)</p>
+    </a>
+    <a href="https://ibb.co/ym81tdg5">
+      <img src="https://i.ibb.co/LDCWmY96/tiny.jpg" alt="tiny" border="0">
+      <p>Teeny-Tiny Sergeant Coco.</p>
+    </a>
+    <a href="https://ibb.co/gbYYb3Zx">
+      <img src="https://i.ibb.co/zWddWrVz/twobros.jpg" alt="twobros" border="0">
+      <p>Ludwig und Raven.</p>
+    </a>
+    <a href="https://ibb.co/3yv01sGS">
+      <img src="https://i.ibb.co/LzrCSPb9/eeve.jpg" alt="eeve" border="0">
+      <p>let that sink in.</p>
+    </a>
+  </div>
 
   <br>
   <h3>COOL WEBSITES YOU SHOULD SEE:</h3>
@@ -153,97 +126,95 @@
     <li><a href="https://www.eham.net/" title="eHAM website for HAM enthusiasts.">HAM radio community forums and gear marketplace</a></li>
   </ul>
 
-  <br>
-  <button onclick="rainFor3Seconds()" title="YOU KNOW YOU WANT TO CLICK IT">CLICK FOR ANGRY CAT RAIN!!</button>
-  <br><br>
-    
- <script>
+  <button onclick="rainCats()" title="YOU KNOW YOU WANT TO CLICK IT">CLICK FOR ANGRY CAT RAIN!!</button>
+
+  <script>
     const CONFIG = {
-        dropCount: 600,           // how many cats fall
-        minSize: 120,            // smallest cat size (pixels)
-        maxSize: 300,            // largest cat size (pixels)
-        minSpeed: 20,             // slowest fall speed
-        maxSpeed: 30,             // fastest fall speed
-        rainDuration: 7000,      // how long rain lasts (milliseconds)
-        img1Chance: 0.5,         // chance of img1 vs img2 (0.5 = 50/50)
-        startY: -500,            // where cats spawn (above screen)
-        resetY: -50              // where cats reset when they fall off
+      dropCount: 150,        
+      minSize: 40,           
+      maxSize: 150,         
+      minSpeed: 5,             
+      maxSpeed: 12,            
+      rainDuration: 5000,    
+      imgSrcs: [
+        'https://i.ibb.co/DgVwbs0h/catangry.png',
+        'https://i.ibb.co/YBGtpVH3/output-onlinepngtools-1.png'
+      ]
     };
 
     const canvas = document.getElementById('rainCanvas');
     const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
     let raining = false;
     let drops = [];
     
-    const img1 = new Image();
-    img1.src = 'https://i.ibb.co/DgVwbs0h/catangry.png';
-    const img2 = new Image();
-    img2.src = 'https://i.ibb.co/YBGtpVH3/output-onlinepngtools-1.png';
+    const loadedImages = CONFIG.imgSrcs.map(src => {
+      const img = new Image();
+      img.src = src;
+      return img;
+    });
 
     class Drop {
-        constructor() {
-            this.reset();
-        }
-        reset() {
-            this.x = Math.random() * canvas.width;
-            this.y = CONFIG.startY;
-            this.speed = Math.random() * (CONFIG.maxSpeed - CONFIG.minSpeed) + CONFIG.minSpeed;
-            this.size = Math.random() * (CONFIG.maxSize - CONFIG.minSize) + CONFIG.minSize;
-            this.img = Math.random() > CONFIG.img1Chance ? img1 : img2;
-        }
-        update() {
-            this.y += this.speed;
-            if (this.y > canvas.height) {
-                this.reset();
-            }
-        }
-        draw() {
-            ctx.drawImage(this.img, this.x, this.y, this.size, this.size);
-        }
+      constructor() {
+        this.reset(true); 
+      }
+
+      reset(isFirstSpawn = false) {
+        this.size = Math.random() * (CONFIG.maxSize - CONFIG.minSize) + CONFIG.minSize;
+        this.x = Math.random() * canvas.width;
+        this.y = isFirstSpawn ? Math.random() * -canvas.height : -this.size;
+        this.speed = Math.random() * (CONFIG.maxSpeed - CONFIG.minSpeed) + CONFIG.minSpeed;
+        this.img = loadedImages[Math.floor(Math.random() * loadedImages.length)];
+      }
+
+      update() {
+        this.y += this.speed;
+        if (this.y > canvas.height) this.reset();
+      }
+
+      draw() {
+        ctx.drawImage(this.img, this.x, this.y, this.size, this.size);
+      }
     }
 
-    function init() {
-        drops = [];
-        for (let i = 0; i < CONFIG.dropCount; i++) {
-            drops.push(new Drop());
-        }
+    function initCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     }
 
     function animate() {
-        if (!raining) return;
+      if (!raining) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      for (let i = 0; i < drops.length; i++) {
+        drops[i].update();
+        drops[i].draw();
+      }
+      requestAnimationFrame(animate);
+    }
+
+    function rainCats() {
+      if (raining) return;
+      
+      raining = true;
+      initCanvas();
+      
+      drops = Array.from({ length: CONFIG.dropCount }, () => new Drop());
+      
+      animate();
+
+      setTimeout(() => {
+        raining = false;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        drops.forEach(drop => {
-            drop.update();
-            drop.draw();
-        });
-        requestAnimationFrame(animate);
+      }, CONFIG.rainDuration);
     }
 
-    function rainFor3Seconds() {
-        if (raining) return;
-        raining = true;
-        init();
-        animate();
-        setTimeout(() => {
-            raining = false;
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-        }, CONFIG.rainDuration);
-    }
-
-    window.addEventListener('resize', () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    });
-</script>
-  
+    window.addEventListener('resize', initCanvas);
+  </script>
 
   <hr>
 
   <h3>CONTACT ME!!</h3>
-  <p>&#x2193 &#x2193 &#x2193</p>
+  <p>&#x2193; &#x2193; &#x2193;</p>
   
   <form action="https://formspree.io/f/xaqpvnpa" method="POST">
     Your email:<br>
@@ -264,9 +235,9 @@
   
   <h3>why did i make this site?</h3>
   <ul>
-    <li title="Knowledge is power!">to gain knowledge about html</li>
-    <li title="Look at me!">to show off to my friends</li>
-    <li title="Style points!">to look cool</li>
+    <li title="AAAAAAAAAAAAAAAAAAAAA">to gain knowledge about html</li>
+    <li title="AAAAAAAAAAAAAAAAAAAAA">to show off to my friends</li>
+    <li title="AAAAAAAAAAAAAAAAAAAAAA">to look cool</li>
   </ul>
 
   <p><b>Click the squirrel for a surprise:</b></p>
@@ -300,43 +271,42 @@
       <tr>
         <td>2026-04-01</td>
         <td>23:45</td>
-        <td>added this happy april fools
-        </td>
+        <td>added this happy april fools</td>
       </tr>
-       <tr>
+      <tr>
         <td>2026-04-06</td>
-        <td> 16:42</td>
-        <td> Added cat gallery, radio and the cool websites you should visit!
-        </td>
+        <td>16:42</td>
+        <td>Added cat gallery, radio and the cool websites you should visit!</td>
+      </tr>
+      <tr>
+        <td>2026-04-12</td>
+        <td>14:40</td>
+        <td>Added "wow" text animation from a website i dont remembre... also i added many cats to the gallery and i also changed the colors a bit, its cool!</td>
       </tr>
       <tr>
         <td>2026-00-00</td>
-        <td> 00:00</td>
-        <td>  ≽^•⩊•^≼
-        </td>
+        <td>00:00</td>
+        <td>≽^•⩊•^≼</td>
       </tr>
-       <tr>
+      <tr>
         <td>2026-00-00</td>
-        <td> 00:00</td>
-        <td>  =^._.^= ∫
-        </td>
+        <td>00:00</td>
+        <td>=^._.^= ∫</td>
       </tr>
-       <tr>
+      <tr>
         <td>2026-00-00</td>
-        <td> 00:00</td>
-        <td>  ദ്ദി/ᐠ｡‸｡ᐟ\
-        </td>
+        <td>00:00</td>
+        <td>ദ്ദി/ᐠ｡‸｡ᐟ\</td>
       </tr>
-       <tr>
+      <tr>
         <td>2026-00-00</td>
-        <td> 00:00</td>
-        <td>  ^._.^
-        </td>
-      </tr> <tr>
+        <td>00:00</td>
+        <td>^._.^</td>
+      </tr>
+      <tr>
         <td>2026-00-00</td>
-        <td> 00:00</td>
-        <td>  ᓚᘏᗢ
-        </td>
+        <td>00:00</td>
+        <td>ᓚᘏᗢ</td>
       </tr>
     </table>
   </details>
@@ -349,7 +319,7 @@
        title="cat of thoughts">
     
   <br><br><br>
-  <p align="center">Made with love</p>
+  <p align="center">Made with love and fingers.</p>
 
   </body>
 </html>
