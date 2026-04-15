@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Concert+One);
 
-
-
 h1 {
   animation: glow 10s ease-in-out infinite;
 }
@@ -55,7 +53,6 @@ h1:nth-child(8) { transform: translateZ(35px); }
 h1:nth-child(9) { transform: translateZ(40px); }
 h1:nth-child(10) { transform: translateZ(45px); }
 
-
 .website-body {
   background-color: #d9bfe5 !important;
   color: #000000;
@@ -64,7 +61,6 @@ h1:nth-child(10) { transform: translateZ(45px); }
   overflow: auto;
   text-align: left;
 }
-
 
 .website-body h1,
 .website-body h2,
@@ -80,32 +76,27 @@ h1:nth-child(10) { transform: translateZ(45px); }
   text-shadow: none;
 }
 
-/* Links */
 .website-body a { color: blue; }
 .website-body a:visited { color: purple; }
 
-/* Iframes */
 .website-body iframe {
   border: 5px outset #ffffff;
   margin: 10px;
   cursor: pointer;
 }
 
-/* Buttons */
 .website-body button {
   padding: 5px;
   cursor: pointer;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-/* Form inputs */
 .website-body input,
 .website-body textarea {
   border: 2px inset #eeeeee;
   padding: 2px;
 }
 
-/* Details/Summary */
 .website-body details {
   border: 2px dashed #000;
   padding: 10px;
@@ -113,7 +104,6 @@ h1:nth-child(10) { transform: translateZ(45px); }
   background: #ffffff;
 }
 
-/* Tables */
 .website-body table {
   border: 3px solid black;
   width: auto;
@@ -126,14 +116,12 @@ h1:nth-child(10) { transform: translateZ(45px); }
   padding: 5px;
 }
 
-/* Web link boxes */
 .web-link {
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
 }
 
-/* Tab content for cat gallery */
 .tab-content {
   display: none;
   padding: 10px;
@@ -145,7 +133,6 @@ h1:nth-child(10) { transform: translateZ(45px); }
   display: block;
 }
 
-/* WOW container specific styles */
 .wow-container {
   background: #0a0a0a;
   overflow: hidden;
@@ -178,7 +165,6 @@ h1:nth-child(10) { transform: translateZ(45px); }
   top: 0;
 }
 
-/* Canvas for cat rain */
 #rainCanvas {
   position: fixed;
   top: 0;
@@ -187,9 +173,8 @@ h1:nth-child(10) { transform: translateZ(45px); }
   z-index: 999;
 }
 
-
 :root {
-  --marquee-speed: 5s;  /* <-- speed of manquee */
+  --marquee-speed: 5s;
 }
 
 .scrolling-header {
@@ -218,4 +203,87 @@ h1:nth-child(10) { transform: translateZ(45px); }
 @keyframes marquee {
   0% { transform: translateX(100vw); }
   100% { transform: translateX(-100%); }
+}
+
+/* === CENTERING IMPROVEMENTS === */
+
+.website-body h2,
+.website-body h3 {
+  text-align: center;
+}
+
+.website-body > div[style*="display: flex"] {
+  justify-content: center;
+}
+
+.website-body button {
+  display: block;
+  margin: 10px auto;
+}
+
+.tab-content.active {
+  text-align: center;
+}
+
+.website-body form {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.website-body form input,
+.website-body form textarea {
+  margin: 5px auto;
+  display: block;
+}
+
+.website-body h4 {
+  text-align: center;
+}
+
+.website-body h4 + p {
+  text-align: center;
+}
+
+.website-body ul {
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+#squirrel {
+  display: block;
+  margin: 0 auto;
+}
+
+.website-body img[alt="a cat on a laptop"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.website-body details.web-stuff-box {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.website-body details table {
+  margin: 0 auto;
+}
+
+/* Center arrows under CONTACT ME */
+.website-body h3 + p {
+  text-align: center;
+}
+
+/* Center "Check my GitHub" link */
+.website-body p a[href*="github"] {
+  display: block;
+  text-align: center;
+}
+
+/* Center "Click the squirrel for a surprise" */
+.website-body p b {
+  display: block;
+  text-align: center;
 }
