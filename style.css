@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Concert+One);
 
 h1 {
-  animation: glow 10s ease-in-out infinite;
+  animation: glow 1s ease-in-out infinite;
 }
 
 * { box-sizing: border-box; }
@@ -54,18 +54,19 @@ h1:nth-child(9) { transform: translateZ(40px); }
 h1:nth-child(10) { transform: translateZ(45px); }
 
 .website-body {
-  background-color: #d9bfe5 !important;
+  background: linear-gradient(to top, #ccccff 0%, #3366cc 100%) !important;
   color: #000000;
   font-family: "Times New Roman", Times, serif;
   margin: 10px;
   overflow: auto;
   text-align: left;
+  min-height: 100vh; /* ensures gradient covers full page */
 }
 
 .website-body h1,
 .website-body h2,
 .website-body h3 {
-  color: #800080;
+  color: #ff00ff;
   text-decoration: underline;
   animation: none;
   font: inherit;
@@ -76,8 +77,8 @@ h1:nth-child(10) { transform: translateZ(45px); }
   text-shadow: none;
 }
 
-.website-body a { color: blue; }
-.website-body a:visited { color: purple; }
+.website-body a { color: rgb(0, 255, 251); }
+.website-body a:visited { color: rgb(0, 0, 0); }
 
 .website-body iframe {
   border: 5px outset #ffffff;
@@ -98,7 +99,7 @@ h1:nth-child(10) { transform: translateZ(45px); }
 }
 
 .website-body details {
-  border: 2px dashed #000;
+  border: 2px dashed #000000;
   padding: 10px;
   margin-top: 20px;
   background: #ffffff;
@@ -112,7 +113,7 @@ h1:nth-child(10) { transform: translateZ(45px); }
 
 .website-body th,
 .website-body td {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   padding: 5px;
 }
 
@@ -148,6 +149,7 @@ h1:nth-child(10) { transform: translateZ(45px); }
   margin: 0;
   display: inline-block;
   position: relative;
+
 }
 
 .wow-container h1 {
@@ -158,11 +160,12 @@ h1:nth-child(10) { transform: translateZ(45px); }
   font: 900 6em 'Concert One', sans-serif;
   text-transform: uppercase;
   position: absolute;
-  color: #0a0a0a;
+  color: #0d165e;
   animation: glow 10s ease-in-out infinite;
   margin: 0;
   left: 0;
   top: 0;
+  
 }
 
 #rainCanvas {
@@ -174,7 +177,7 @@ h1:nth-child(10) { transform: translateZ(45px); }
 }
 
 :root {
-  --marquee-speed: 5s;
+  --marquee-speed: 7s;
 }
 
 .scrolling-header {
@@ -190,9 +193,9 @@ h1:nth-child(10) { transform: translateZ(45px); }
 .scrolling-header h1 {
   display: inline-block;
   animation: marquee var(--marquee-speed) linear infinite;
-  color: #ffff00;
+  color: #00005c;
   font: 900 3em 'Comic Sans MS', sans-serif;
-  text-shadow: 2px 2px #ff0000;
+  text-shadow: 2px 2px #000000;
   text-transform: uppercase;
   position: relative;
   width: auto;
@@ -205,7 +208,7 @@ h1:nth-child(10) { transform: translateZ(45px); }
   100% { transform: translateX(-100%); }
 }
 
-/* === CENTERING IMPROVEMENTS === */
+/* === CENTERING THINGS === */
 
 .website-body h2,
 .website-body h3 {
