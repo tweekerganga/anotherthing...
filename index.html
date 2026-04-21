@@ -1,430 +1,515 @@
-@import url(https://fonts.googleapis.com/css?family=Concert+One);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>is this a website?</title>
+    <meta name="keywords" content="HTML, cool, cooking, diy, awesome">
+    <meta name="author" content="Alex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /*  */
+      details.web-stuff-box {
+        border: 1px solid black;
+        background: #f0f0f0;
+        margin-top: 20px;
+      }
 
-h1 {
-  animation: glow 1s ease-in-out infinite;
-}
+      details.web-stuff-box summary {
+        padding: 15px;
+        cursor: pointer;
+        list-style: none; 
+        font-weight: bold;
+        display: block;
+      }
 
-* { box-sizing: border-box; }
+      details.web-stuff-box summary::-webkit-details-marker {
+        display: none; 
+      }
 
-body {
-  background: #0a0a0a;
-  overflow: hidden;
-  text-align: center;
-}
+      details.web-stuff-box[open] summary {
+        border-bottom: 1px solid black;
+        background: #e0e0e0;
+      }
 
-figure {
-  animation: wobble 5s ease-in-out infinite;
-  transform-origin: center center;
-  transform-style: preserve-3d;
-}
+      .tab-content a {
+        display: inline-block;
+        margin: 5px;
+        text-decoration: none;
+        color: black;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body class="website-body">
 
-@keyframes wobble {
-  0%, 100% { transform: rotate3d(1, 1, 0, 40deg); }
-  25% { transform: rotate3d(-1, 1, 0, 40deg); }
-  50% { transform: rotate3d(-1, -1, 0, 40deg); }
-  75% { transform: rotate3d(1, -1, 0, 40deg); }
-}
-
-h1 {
-  display: block;
-  width: 100%;
-  padding: 40px;
-  line-height: 1.5;
-  font: 900 8em 'Concert One', sans-serif;
-  text-transform: uppercase;
-  position: absolute;
-  color: #0a0a0a;
-}
-
-@keyframes glow {
-  0%, 100% { text-shadow: 0 0 30px red; }
-  25% { text-shadow: 0 0 30px orange; }
-  50% { text-shadow: 0 0 30px forestgreen; }
-  75% { text-shadow: 0 0 30px cyan; }
-}
-
-h1:nth-child(2) { transform: translateZ(5px); }
-h1:nth-child(3) { transform: translateZ(10px); }
-h1:nth-child(4) { transform: translateZ(15px); }
-h1:nth-child(5) { transform: translateZ(20px); }
-h1:nth-child(6) { transform: translateZ(25px); }
-h1:nth-child(7) { transform: translateZ(30px); }
-h1:nth-child(8) { transform: translateZ(35px); }
-h1:nth-child(9) { transform: translateZ(40px); }
-h1:nth-child(10) { transform: translateZ(45px); }
-
-.website-body {
-   background: linear-gradient(to bottom, #006699 0%, #ccff66 100%);
-  color: #000000;
-  font-family: "Times New Roman", Times, serif;
-  margin: 10px;
-  overflow: auto;
-  text-align: left;
-  min-height: 100vh; /* ensures gradient covers full page */
-}
-
-.website-body h1,
-.website-body h2,
-.website-body h3 {
-  color: #ff00ff;
-  text-decoration: underline;
-  animation: none;
-  font: inherit;
-  position: static;
-  width: auto;
-  padding: 0;
-  text-transform: none;
-  text-shadow: none;
-}
-
-.website-body a { color: rgb(0, 0, 0); }
-.website-body a:visited { color: rgb(0, 0, 0); }
-
-.website-body iframe {
-  border: 5px outset #ffffff;
-  margin: 10px;
-  cursor: pointer;
-}
-
-.website-body button {
-  padding: 5px;
-  cursor: pointer;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.website-body input,
-.website-body textarea {
-  border: 2px inset #eeeeee;
-  padding: 2px;
-}
-
-.website-body details {
-  border: 2px dashed #000000;
-  padding: 10px;
-  margin-top: 20px;
-  background: #ffffff;
-}
-
-.website-body table {
-  border: 3px solid black;
-  width: auto;
-  background: white;
-}
-
-.website-body th,
-.website-body td {
-  border: 1px solid rgb(0, 0, 0);
-  padding: 5px;
-}
-
-.web-link {
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-}
-
-.tab-content {
-  display: none;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background: white;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-.wow-container {
-  background: #0a0a0a;
-  overflow: hidden;
-  text-align: center;
-  padding: 20px;
-  margin: 10px 0;
-  border: 3px solid #800080;
-}
-
-.wow-container figure {
-  height: 150px;
-  width: 100%;
-  margin: 0;
-  display: inline-block;
-  position: relative;
-
-}
-
-.wow-container h1 {
-  display: block;
-  width: 100%;
-  padding: 20px;
-  line-height: 1.2;
-  font: 900 6em 'Concert One', sans-serif;
-  text-transform: uppercase;
-  position: absolute;
-  color: #0d165e;
-  animation: glow 10s ease-in-out infinite;
-  margin: 0;
-  left: 0;
-  top: 0;
+    <script>NekoType="fancy"</script>
+<h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
+href="https://webneko.net">Neko</a></h1>
   
-}
+  <canvas id="rainCanvas"></canvas>
+  
+<div class="scrolling-header">
+  <h1>WELCOME TO MY WEBSITE!!!!</h1>
+</div>
+  
+  <div class="wow-container">
+    <figure>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+      <h1>WOW!</h1>
+    </figure>
+  </div>
 
-#rainCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 999;
-}
+  <p align="center">there should be a small fancy kitty <br> on the top right corner ( click it !!!!)</p>
+  
+  <hr>
+ 
+  <h2>HERE IS COOL STUFF TO SEE:</h2>
 
-:root {
-  --marquee-speed: 7s;
-}
+    <p><b>Click the squirrel for a surprise lol</b></p>
+  <a href="#" onclick="spinAndLaugh(); return false;" title="CLICK THE SQUIRREL">
+    <img id="squirrel" src="https://i.ibb.co/cSQgX90h/squirrel.png" alt="squirrel" style="transition: transform 0.5s ease; width: 100px;">
+  </a>
 
-.scrolling-header {
-  text-align: center;
-  overflow: hidden;
-  white-space: nowrap;
-  background: #800080;
-  padding: 10px 0;
-  border: 3px solid #000;
-  position: relative;
-}
+  <audio id="laugh" preload="auto">
+    <source src="https://files.catbox.moe/14ih3m.mp3" type="audio/mpeg">
+  </audio>
 
-.scrolling-header h1 {
-  display: inline-block;
-  animation: marquee var(--marquee-speed) linear infinite;
-  color: #00005c;
-  font: 900 3em 'Comic Sans MS', sans-serif;
-  text-shadow: 2px 2px #000000;
-  text-transform: uppercase;
-  position: relative;
-  width: auto;
-  padding: 0;
-  margin: 0;
-}
-
-@keyframes marquee {
-  0% { transform: translateX(100vw); }
-  100% { transform: translateX(-100%); }
-}
-
-
-
-.website-body h2,
-.website-body h3 {
-  text-align: center;
-}
-
-.website-body > div[style*="display: flex"] {
-  justify-content: center;
-}
-
-.website-body button {
-  display: block;
-  margin: 10px auto;
-}
-
-.tab-content.active {
-  text-align: center;
-}
-
-.website-body form {
-  margin: 0 auto;
-  max-width: 400px;
-  text-align: center;
-}
-
-.website-body form input,
-.website-body form textarea {
-  margin: 5px auto;
-  display: block;
-}
-
-.website-body h4 {
-  text-align: center;
-}
-
-.website-body h4 + p {
-  text-align: center;
-}
-
-.website-body ul {
-  text-align: center;
-  list-style-position: inside;
-  padding-left: 0;
-}
-
-#squirrel {
-  display: block;
-  margin: 0 auto;
-}
-
-.website-body img[alt="a cat on a laptop"] {
-  display: block;
-  margin: 0 auto;
-}
-
-.website-body details.web-stuff-box {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
-}
-
-.website-body details table {
-  margin: 0 auto;
-}
-
-/* Center arrows under CONTACT ME */
-.website-body h3 + p {
-  text-align: center;
-}
+  <script>
+    let rotation = 0;
+    function spinAndLaugh() {
+      rotation += 360;
+      document.getElementById('squirrel').style.transform = 'rotate(' + rotation + 'deg)';
+      document.getElementById('laugh').currentTime = 0;
+      document.getElementById('laugh').play();
+    }
+  </script>
 
 
-.website-body p a[href*="github"] {
-  display: block;
-  text-align: center;
-}
+  <script async src="https://ukradiolive.com/public/jsv260327161015/jquery.embed-popup-player.js"></script>
 
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start;">
 
-.website-body p b {
-  display: block;
-  text-align: center;
-}
+     <a href="https://tweekerganga.github.io/the-human-protocol/" target="_blank" class="web-link" title="a small article i made for you to read!" style="display: inline-block; border: 1px solid black; line-height: 0;">
+      <iframe src="https://tweekerganga.github.io/the-human-protocol/" width="200" height="150" style="pointer-events: none;"></iframe>
+    </a>
+
+    <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; white-space: normal;">
+      <a class="js-popupPlayer" href="https://ukradiolive.com/bbc-radio-1#server727" title="Start online radio!">
+        <img src="https://ukradiolive.com/public/img/launcher/logo_96.png" title="Start online radio!" alt="Start online radio!">
+      </a>
+    </div>
+
+    <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; white-space: normal;">
+      <a href="https://www.corpwatch.org/article/nestle-and-making-brazils-obesity-crisis" target="_blank" title="NOT COOL SHIT CHECK IT OUT!!">
+        <b>FUCK NESTLE</b>
+      </a>
+    </div>
+
+    <div style="display: inline-block; padding: 10px; border: 1px solid black; background: white; width: 150px; white-space: normal;">
+      <a href="https://stacks.stanford.edu/file/hp877by7094/thesisBower-fixed-augmented.pdf" target="_blank" title="COOL SHIT CHECK IT OUT!!">
+        <b>BOUNDARY LAYER DYNAMIC SOARING FOR AUTONOMOUS AIRCRAFT:</b>
+      </a>
+    </div>
+
+    <a href="https://tweekerganga.github.io/Sourkraut-Website/" target="_blank" class="web-link" title="SOUP EVERYONE LOVES SOUP RIGHT?????????" style="display: inline-block; border: 1px solid black; line-height: 0;">
+      <iframe src="https://tweekerganga.github.io/Sourkraut-Website/" width="200" height="150" style="pointer-events: none;"></iframe>
+    </a>
+
+    <a href="https://tweekerganga.github.io/Hotwire-cutter/" target="_blank" class="web-link" title="THIS CAN MAKE COOL FUCKING PLANES AND COOL SHIT GET SOME BITCHES WITH THE HUMBLE HOTWIRE FOAM CUTTER!!!!!" style="display: inline-block; border: 1px solid black; line-height: 0;">
+      <iframe src="https://tweekerganga.github.io/Hotwire-cutter/" width="200" height="150" style="pointer-events: none;"></iframe>
+    </a>
+
+    <a href="https://tweekerganga.github.io/Apple-Pie/" target="_blank" class="web-link" title="A TEXT THAT WILL MAKE YOU MAKE PIE, EVERYONE LOVES PIE EVEN YOUR NEIGHBOR LOVES APPLE PIE, MAKE SOME APPLE PIE FOR YOURSELF AND PEOPLE YOU KNOW IT IS SO CHEAP AND GOOD APPLE PIEEE!!!!!!!!!!!!!!" 
+    style="display: inline-block; border: 1px solid black; line-height: 0;">
+      <iframe src="https://tweekerganga.github.io/Apple-Pie/" width="200" height="150" style="pointer-events: none;"></iframe>
+    </a>
+
+    
+  
+  </div>
+
+  <br>
+
+   <h3>COOL WEBSITES YOU SHOULD SEE:</h3>
+  <ul>
+    <li><a href="https://nt7s.com" title="some cool open source sharing website"> open-source amateur radio hardware  </a></li>
+    <li><a href="https://www.qrz.com/" title="website for RF geeks/nerds!">callsign database and active community with forums!</a></li>
+    <li><a href="https://www.eham.net/" title="eHAM website for HAM enthusiasts.">HAM radio community forums and gear marketplace</a></li>
+  </ul>
+
+ <details class="web-stuff-box">
+    <summary title="CLICK TO SEE CATS"> cats from everyone to everyone </summary>
+    <div style="padding: 10px;">
 
 
 
-           /* the clickable thing dude end */
+      <a href="https://ibb.co/FkcLn5M0">
+        <img src="https://i.ibb.co/9mBkGbLV/rivakittycat.jpg" alt="rivakittycat" border="0">
+        <p>Riva kitty cat</p>
+    </a>
 
-.button-shitter-container {
-    text-align: center;
-    font-size: 0;
-}
+    <a href="https://ibb.co/ccFfddTY">
+        <img src="https://i.ibb.co/6RP955sX/litterofcats.jpg" alt="litterofcats" border="0">
+        <p>Litter of cats (Riva, Gizmo and Lilly)</p>
+    </a>
 
-details.web-stuff-boxa,
-details.web-stuff-boxa2 {
-    vertical-align: top;
-    margin: 10px;
-    font-size: 16px;
-    border: 3px solid #000000 !important;
-    box-sizing: border-box;
-    outline: none;
-}
+    <a href="https://ibb.co/J8JJvpp">
+        <img src="https://i.ibb.co/HR88tPP/lillykittycat.jpg" alt="lillykittycat" border="0">
+        <p>Lilly kitty cat</p>
+    </a>
+
+    <a href="https://ibb.co/HfPRRX4b">
+        <img src="https://i.ibb.co/bMvYY7mC/hydroscatstwo.jpg" alt="hydroscatstwo" border="0">
+        <p>kitty cats (Gizmo and Lilly)</p>
+    </a>
+
+    <a href="https://ibb.co/WWRXWs1T">
+        <img src="https://i.ibb.co/4Z0LZJxQ/hydroandcat.jpg" alt="hydroandcat" border="0">
+        <p>Phonetic and cat</p>
+    </a>
+
+    <a href="https://ibb.co/bjSdCVLy">
+        <img src="https://i.ibb.co/j9c4QYGx/gizmokitty.jpg" alt="gizmokitty" border="0">
+        <p>Gizmo kitty</p>
+    </a>
+
+    <a href="https://ibb.co/6cTgXnVg">
+        <img src="https://i.ibb.co/spNyWmky/catsandsofa.jpg" alt="catsandsofa" border="0">
+        <p>Cats and sofa</p>
+    </a>
+
+    <a href="https://ibb.co/wNQGTyns">
+        <img src="https://i.ibb.co/1fXy3ZC6/catfamily.jpg" alt="catfamily" border="0">
+        <p>Cat family (Lilly, Gizmo and Riva)</p>
+    </a>
+
+    <a href="https://ibb.co/Rp2FXc31">
+        <img src="https://i.ibb.co/4ZWqbp8c/Zeus.jpg" alt="Zeus" border="0">
+        <p>Zeus</p>
+    </a>
+
+    <a href="https://ibb.co/rRKbh5JR">
+        <img src="https://i.ibb.co/YF4DSfGF/Zeusund-Herkules.jpg" alt="Zeusund-Herkules" border="0">
+        <p>Zeus und Herkules</p>
+    </a>
+
+    <a href="https://ibb.co/fGYm6ZXf">
+      <img src="https://i.ibb.co/tPMyjnHg/5678.jpg" alt="5678" border="0">
+      <p>His highness (Bonzo!)</p>
+    </a>
+
+    <a href="https://ibb.co/0jXkvbBJ">
+      <img src="https://i.ibb.co/mCBmgWvz/5702.jpg" alt="5702" border="0">
+      <p>kitty kitty ( Bonzo ).</p>
+    </a>
+
+    <a href="https://ibb.co/wNzXTd8W">
+      <img src="https://i.ibb.co/fYx5bXZp/6444.jpg" alt="6444" border="0">
+      <p>catman or batcat? ( Sir Bonzo)</p>
+    </a>
+    <a href="https://ibb.co/qMXRLVdB">
+      <img src="https://i.ibb.co/d01QsxrB/cica.jpg" alt="cica" border="0">
+      <p>Cica Mica Parádnica (Lilly).</p>
+    </a>
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/YFZ2fpGt/rockcat.jpg" alt="rockcat" border="0">
+      <p>cat be like.</p>
+    </a>
+    <a href="https://imgbb.com/">
+      <img src="https://i.ibb.co/WvGfMrnR/theeeve.jpg" alt="theeeve" border="0">
+      <p>sleeping miss (Eeve).</p>
+    </a>
+    <a href="https://ibb.co/m5Fq2XQt">
+      <img src="https://i.ibb.co/CKs7YMxv/catloaf.jpg" alt="catloaf" border="0">
+      <p>cat from above (Lilly).</p>
+    </a>
+    <a href="https://ibb.co/JR2ZFRPJ">
+      <img src="https://i.ibb.co/TBRyqB53/tacicuska.png" alt="tacicuska" border="0">
+      <p>cat (Lilly)</p>
+    </a>
+    <a href="https://ibb.co/ym81tdg5">
+      <img src="https://i.ibb.co/LDCWmY96/tiny.jpg" alt="tiny" border="0">
+      <p>Teeny-Tiny Sergeant Coco.</p>
+    </a>
+    <a href="https://ibb.co/gbYYb3Zx">
+      <img src="https://i.ibb.co/zWddWrVz/twobros.jpg" alt="twobros" border="0">
+      <p>Ludwig und Raven.</p>
+    </a>
+    <a href="https://ibb.co/3yv01sGS">
+      <img src="https://i.ibb.co/LzrCSPb9/eeve.jpg" alt="eeve" border="0">
+      <p>let that sink in.</p>
+
+     <a href="https://media.tenor.com/8AtvqiYPm04AAAAd/cat-leaf.gif" target="_blank">
+  <img src="https://media.tenor.com/8AtvqiYPm04AAAAd/cat-leaf.gif" alt="cat with leaf" style="width: 200px;">
+  <p>cat with leaf lol</p>
+</a> 
+    </a>
+  </div>
+
+ </details>
+
+  <details class="web-stuff-box">
+    <summary title="CLICK TO SEE WHAT I DID"> WEB STUFF THINGS I ADD or something... </summary>
+    <div style="padding: 10px;">
+        <table>
+          <tr style="background: #ccc;">
+            <th>DAY</th>
+            <th>HOUR</th>
+            <th>WHAT I DID</th>
+          </tr>
+          <tr>
+            <td>2026-04-01</td>
+            <td>23:45</td>
+            <td>added this happy april fools</td>
+          </tr>
+          <tr>
+            <td>2026-04-06</td>
+            <td>16:42</td>
+            <td>Added cat gallery, radio and the cool websites you should visit!</td>
+          </tr>
+          <tr>
+            <td>2026-04-12</td>
+            <td>14:40</td>
+            <td>Added "wow" text animation... changed the colors a tad bit, its cool!</td>
+          </tr>
+          <tr>
+            <td>2026-04-15</td>
+            <td>03:07</td>
+            <td>Added the "Human Protocol" article/manifesto and fixed the Web Stuff button!</td>
+          </tr>
+        <tr>
+          <td>2026-04-15</td>
+          <td>21:00</td>
+          <td style="max-width: 300px; word-wrap: break-word; white-space: normal;">
+           Made the &lt;summary&gt; of this index the whole box so its more easy to open, 
+            also added Bonzo, thanks stranger of the internet for sharing your kitty cat with me!
+         </td>
+         </tr>
+          <tr>
+            <td>2026-04-06</td>
+            <td>07:08</td>
+            <td>Changed the colors a bit,added a very fancy gradient, changed how the cat gallery looks ( the button to open it) and also added 5 more cats to the gallery! thanks much my good friend Hydrophonetic for providing! thanks man.</td>
+          </tr>
+          <tr>
+            <td>2026-04-18</td>
+            <td>12:17</td>
+            <td>=changed the colors a bit and added the little kitty that folows your mouse, thanks https://webneko.net/ for sharing awsome cats for people to use! also added the country flag thing and so...</td>
+          </tr>
+                    <tr>
+            <td>2026-04-21</td>
+            <td>23:55</td>
+            <td>added the like and dislike thing there near About, uhh im so lazy... ( new color gradient )</td>
+          </tr>
+                    <tr>
+            <td>2026-00-00</td>
+            <td>00:00</td>
+            <td>=^._.^= ∫</td>
+          </tr>
+          <tr>
+            <td>2026-00-00</td>
+            <td>00:00</td>
+            <td>ദ്ദി/ᐠ｡‸｡ᐟ\</td>
+          </tr>
+          <tr>
+            <td>2026-00-00</td>
+            <td>00:00</td>
+            <td>^._.^</td>
+          </tr>
+          <tr>
+            <td>2026-00-00</td>
+            <td>00:00</td>
+            <td>ᓚᘏᗢ</td>
+          </tr>
+        </table>
+    </div>
+  </details>
+
+  <br>
+ 
+
+  <button onclick="rainCats()" title="YOU KNOW YOU WANT TO CLICK IT">CLICK ME FOR ANGRY CAT RAIN!!</button>
+
+  <script>
+    const CONFIG = {
+      dropCount: 150,        
+      minSize: 40,           
+      maxSize: 150,         
+      minSpeed: 5,             
+      maxSpeed: 12,            
+      rainDuration: 5000,    
+      imgSrcs: [
+        'https://i.ibb.co/DgVwbs0h/catangry.png',
+        'https://i.ibb.co/YBGtpVH3/output-onlinepngtools-1.png'
+      ]
+    };
+
+    const canvas = document.getElementById('rainCanvas');
+    const ctx = canvas.getContext('2d');
+    let raining = false;
+    let drops = [];
+    
+    const loadedImages = CONFIG.imgSrcs.map(src => {
+      const img = new Image();
+      img.src = src;
+      return img;
+    });
+
+    class Drop {
+      constructor() {
+        this.reset(true); 
+      }
+
+      reset(isFirstSpawn = false) {
+        this.size = Math.random() * (CONFIG.maxSize - CONFIG.minSize) + CONFIG.minSize;
+        this.x = Math.random() * canvas.width;
+        this.y = isFirstSpawn ? Math.random() * -canvas.height : -this.size;
+        this.speed = Math.random() * (CONFIG.maxSpeed - CONFIG.minSpeed) + CONFIG.minSpeed;
+        this.img = loadedImages[Math.floor(Math.random() * loadedImages.length)];
+      }
+
+      update() {
+        this.y += this.speed;
+        if (this.y > canvas.height) this.reset();
+      }
+
+      draw() {
+        ctx.drawImage(this.img, this.x, this.y, this.size, this.size);
+      }
+    }
+
+    function initCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function animate() {
+      if (!raining) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      for (let i = 0; i < drops.length; i++) {
+        drops[i].update();
+        drops[i].draw();
+      }
+      requestAnimationFrame(animate);
+    }
+
+    function rainCats() {
+      if (raining) return;
+      
+      raining = true;
+      initCanvas();
+      
+      drops = Array.from({ length: CONFIG.dropCount }, () => new Drop());
+      
+      animate();
+
+      setTimeout(() => {
+        raining = false;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }, CONFIG.rainDuration);
+    }
+
+    window.addEventListener('resize', initCanvas);
+  </script>
+
+      <!-- BUTTON SHITTER CLICKER THING START -->
+
+<div class="button-shitter-container">
+    <details class="web-stuff-boxa">
+        <summary><br></summary>
+        <br>
+    </details>
+
+    <details class="web-stuff-boxa2">
+        <summary><br></summary>
+        <br>
+    </details>
+</div>
+
+      <!-- BUTTON SHITTER CLICKER THING END -->
 
 
-details.web-stuff-boxa summary,
-details.web-stuff-boxa2 summary {
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none; 
-}
+  <div style="text-align: center;">
+  <a href="http://s01.flagcounter.com/more/jQr">
+    <img src="https://s01.flagcounter.com/count2/jQr/bg_3D0DFF/txt_FF0F47/border_F811FF/columns_4/maxflags_207/viewers_visitor+country+logger/labels_0/pageviews_1/flags_0/percent_0/" 
+    alt="Flag Counter" border="0">
+  </a>
+</div>
 
 
-details.web-stuff-boxa[open],
-details.web-stuff-boxa2[open] {
-    border: 3px solid #000000 !important;
-}
-        
-        details.web-stuff-boxa, 
-        details.web-stuff-boxa2 {
-            vertical-align: top; 
+  <hr>
+
    
-        }
-
-        :root {
-            --box-width: 200px;
-            --box-height: 200px;
-        }
-
-        /*this 2 */
-                details.web-stuff-boxa2 {
-            width: var(--box-width);
-            height: var(--box-height);
-            background-color: #00fbff;
-            display: inline-block;
-            position: relative;
-        }
 
 
-        details.web-stuff-boxa2[open] {
-            background-color: #ff4444;
-        }
-
-        details.web-stuff-boxa2 summary {
-            cursor: pointer;
-            list-style: none;
-            font-weight: bold;
-            display: block;
-            
-            width: 100%;
-            height: 100%;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-
-        details.web-stuff-boxa2:not([open]) > *:not(summary) {
-            display: none;
-        }
-        /*this end of 2*/
-
-        details.web-stuff-boxa {
-            width: var(--box-width);
-            height: var(--box-height);
-            background-color: #00fbff;
-            display: inline-block;
-            position: relative;
-        }
-
-
-        details.web-stuff-boxa[open] {
-            background-color: #ff4444;
-        }
-
-        details.web-stuff-boxa summary {
-            cursor: pointer;
-            list-style: none;
-            font-weight: bold;
-            display: block;
-            
-            width: 100%;
-            height: 100%;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-
-        details.web-stuff-boxa:not([open]) > *:not(summary) {
-            display: none;
-        }
-
-        body {
-          background-color: rgb(13, 13, 31);
-          text-align: center; 
-        } 
-
+    
+  <br>
+  <h4>About Alex:</h4> 
+  <p>Hello i am Alex and im a amateur html coder, <ins>just made this site and its pretty cool!</ins><br>
+  i will be adding much more everyday to this site to become a HTML, CSS and maybe JS master coder!<br>
+  hope you enjoy my site and feel free to send me suggestions at 
+  <a href="mailto:tweekerganga@gmail.com" title="Email me!">my email</a>.</p>
         
-.button-shitter-container {
-    text-align: center;
-    font-size: 0; 
-}
+  <p><a href="https://github.com/tweekerganga" target="_blank" title="My GitHub Profile">CHECK MY GITHUB</a></p>
+  
+  <h3>why did i make this site?</h3>
+  <ul>
+    <li title="AAAAAAAAAAAAAAAAAAAAA">to gain knowledge about html</li>
+    <li title="AAAAAAAAAAAAAAAAAAAAA">to show off to my friends</li>
+    <li title="AAAAAAAAAAAAAAAAAAAAAA">to look cool</li>
+  </ul>
 
-details.web-stuff-boxa,
-details.web-stuff-boxa2 {
-    vertical-align: top;
-    margin: 10px; 
-    font-size: 16px; 
-}
+<br><br>
+<div style="text-align: center;">
+  <h4>Like my site?</h4>
+  <h5>now you can upvote/downvote it!</h5>
+<!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="large" data-i18n_like="   " data-ef_voting="grow" data-identifier="item_1" data-voting_frequency="120"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
+
+    <h3>CONTACT ME!!</h3>
+  <p>&#x2193; &#x2193; &#x2193;</p>
+  
+  <form action="https://formspree.io/f/xaqpvnpa" method="POST">
+    Your email:<br>
+    <input type="email" name="email"><br>
+    Your message:<br>
+    <textarea name="message" rows="4" cols="40"></textarea><br>
+    <button type="submit" title="Send it!">SEND EMAIL</button>
+  </form>
+
+  
+  <br><br>
+
+  <div style="text-align: center; margin: 20px 0;">
+  <a href="https://imgbb.com/" style="display: inline-block;">
+    <img src="https://i.ibb.co/TDKpP1GS/blive.jpg" alt="Screenshot" border="0" style="display: block; margin: 0 auto;">
+    <p style="margin: 10px 0 0 0;">BELIEVE!</p>
+  </a>
+</div>
+  
+  <img src="https://i.ibb.co/WNBSwcD5/catonthelaptop.jpg" 
+       style="border: 10px ridge silver; max-width: 400px;" 
+       alt="a cat on a laptop"
+       title="cat of thoughts">
+  <br>
+  <br>
 
 
-details.web-stuff-boxa summary,
-details.web-stuff-boxa2 summary {
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-        /* the clickable thing dude end */
+
+  <hr>
+    
+  <br><br><br>
+  <p align="center">Made with love and fingers.</p>
+
+  </body>
+</html>
