@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Concert+One);
 
 h1 {
@@ -208,7 +209,7 @@ h1:nth-child(10) { transform: translateZ(45px); }
   100% { transform: translateX(-100%); }
 }
 
-/* === CENTERING THINGS === */
+
 
 .website-body h2,
 .website-body h3 {
@@ -279,14 +280,152 @@ h1:nth-child(10) { transform: translateZ(45px); }
   text-align: center;
 }
 
-/* Center "Check my GitHub" link */
+
 .website-body p a[href*="github"] {
   display: block;
   text-align: center;
 }
 
-/* Center "Click the squirrel for a surprise" */
+
 .website-body p b {
   display: block;
   text-align: center;
 }
+
+
+
+           /* the clickable thing dude end */
+
+.button-shitter-container {
+    text-align: center;
+    font-size: 0;
+}
+
+details.web-stuff-boxa,
+details.web-stuff-boxa2 {
+    vertical-align: top;
+    margin: 10px;
+    font-size: 16px;
+    border: 3px solid #000000 !important;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+details.web-stuff-boxa summary,
+details.web-stuff-boxa2 summary {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; 
+}
+
+
+details.web-stuff-boxa[open],
+details.web-stuff-boxa2[open] {
+    border: 3px solid #000000 !important;
+}
+        
+        details.web-stuff-boxa, 
+        details.web-stuff-boxa2 {
+            vertical-align: top; 
+   
+        }
+
+        :root {
+            --box-width: 200px;
+            --box-height: 200px;
+        }
+
+        /*this 2 */
+                details.web-stuff-boxa2 {
+            width: var(--box-width);
+            height: var(--box-height);
+            background-color: #00fbff;
+            display: inline-block;
+            position: relative;
+        }
+
+
+        details.web-stuff-boxa2[open] {
+            background-color: #ff4444;
+        }
+
+        details.web-stuff-boxa2 summary {
+            cursor: pointer;
+            list-style: none;
+            font-weight: bold;
+            display: block;
+            
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        details.web-stuff-boxa2:not([open]) > *:not(summary) {
+            display: none;
+        }
+        /*this end of 2*/
+
+        details.web-stuff-boxa {
+            width: var(--box-width);
+            height: var(--box-height);
+            background-color: #00fbff;
+            display: inline-block;
+            position: relative;
+        }
+
+
+        details.web-stuff-boxa[open] {
+            background-color: #ff4444;
+        }
+
+        details.web-stuff-boxa summary {
+            cursor: pointer;
+            list-style: none;
+            font-weight: bold;
+            display: block;
+            
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        details.web-stuff-boxa:not([open]) > *:not(summary) {
+            display: none;
+        }
+
+        body {
+          background-color: rgb(13, 13, 31);
+          text-align: center; 
+        } 
+
+        
+.button-shitter-container {
+    text-align: center;
+    font-size: 0; 
+}
+
+details.web-stuff-boxa,
+details.web-stuff-boxa2 {
+    vertical-align: top;
+    margin: 10px; 
+    font-size: 16px; 
+}
+
+
+details.web-stuff-boxa summary,
+details.web-stuff-boxa2 summary {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        /* the clickable thing dude end */
